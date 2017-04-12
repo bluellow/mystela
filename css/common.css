@@ -1,0 +1,86 @@
+body{font-family: 微软雅黑;}
+a, a:hover,a:active,a:visited,a:focus{font-family: 微软雅黑;text-decoration: none;}
+a{color: #666666;}
+a:hover{color: #07358c;}
+.container{padding: 0;}
+
+.header{background: #ffffff;}
+.header .top{padding: 16px 0;background: #f4f4f4;}
+.header .top .container a{margin: 0 12px; font-size: 12px;}
+.header .top .container ul{margin-right: 30px;}
+.header .top .container ul li{float: left;margin-left: 15px;}
+
+.header .body .logo{padding:25px 0;border-bottom: 1px dashed #cccccc;}
+.header .body .logo a{display:block;width: 304px;margin: 0 auto;}
+.header .body ul{width: 100%;padding: 15px 0;}
+.header .body ul li{float: left;width: 16.66%;text-align: center;border-right: 1px solid #cccccc;}
+.header .body ul li:last-child{border: 0;}
+
+
+.footer .body{
+    padding-top:40px;
+    background: -webkit-linear-gradient(#052042, #072a57); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#052042, #072a57); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#052042, #072a57); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#052042, #072a57); /* 标准的语法 */
+}
+.footer .body .container dl{margin-bottom: 50px;}
+.footer .body .container dl dt{color: #fff;font-size: 16px;}
+.footer .body .container dl dd a{color: #999;font-size: 14px;}
+.footer .body .container dl dd{margin-top: 12px;}
+.footer .body .container > div p{width:100%;margin-top:12px;margin-left:35px;font-size: 20px;color: #fff;}
+
+/*[0,980]*/
+@media screen and (max-width: 980px) {
+    .footer .body .container{padding-left: 50px;}
+    .footer .body .container dl dt{font-size: 24px;font-weight: normal;}
+    .footer .body .container dl dd a{color: #999;font-size: 20px;}
+    .footer .body .container dl dd a span{font-size: 14px;}
+}
+
+.footer .bottom{background: #052042;padding: 10px;}
+.footer .bottom p{text-align: center;height: 20px;color: #c8c8c8;font-size: 14px;line-height: 20px;}
+
+/*[0,1199]*/
+@media screen and (max-width: 1199px) {
+    .footer .body .container dl{margin:0px;margin-bottom: 50px;}
+}
+
+/*[750,979]*/
+@media screen and (min-width: 750px) and (max-width: 979px) {
+    .container{padding: 0 0px;width: 100%;}
+}
+
+/*[1200,1920]*/
+@media screen and (min-width:1200px){
+    .footer .body .container dl{margin-right:25px;}
+    a{font-size: 16px;}
+}
+
+/*[0-750]*/
+@media screen and (max-width: 750px){
+    .header .top .container a{font-size: 22px;margin: 0 5px;}
+    .header .top .container a i{font-size: 22px;}
+    .header .top .container ul{margin-right: 0;}
+    .header .top .container ul li{float: left;margin-left:0px;}
+    a{font-size: 24px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

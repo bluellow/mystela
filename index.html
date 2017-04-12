@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>mystela</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+</head>
+<body>
+    <!---------------header--------------->
+    <div class="header">
+        <div class="top">
+            <div class="container">
+                <a class="signin" href="javascript:void(0);">登录</a>
+                <a class="signup" href="javascript:void(0);">注册</a>
+                <ul class="fr clearfix">
+                    <li>
+                        <a href="javascript:void(0);"><i class="iconfont">&#xe600;</i>搜索</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="iconfont">&#xe601;</i>购物车</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="iconfont">&#xe7bb;</i>400-885-8816</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div class="logo">
+                <a href="javascript:void(0);"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="container">
+                <ul class="clearfix">
+                    <li><a href="javascript:void(0);">首页</a></li>
+                    <li><a href="javascript:void(0);">品牌介绍</a></li>
+                    <li><a href="javascript:void(0);">品牌介绍</a></li>
+                    <li><a href="javascript:void(0);">产品中心</a></li>
+                    <li><a href="javascript:void(0);">联系我们</a></li>
+                    <li><a href="javascript:void(0);">公司活动</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------banner----------->
+    <ul class="banner">
+        <li><img src="img/b_l_1.jpg" alt="" style="width: 100%;"></li>
+        <li><img src="img/b_l_2.jpg" alt="" style="width: 100%;"></li>
+        <li><img src="img/b_l_3.jpg" alt="" style="width: 100%;"></li>
+    </ul>
+
+
+    <!------------------------------footer------------------>
+    <div class="footer">
+        <div class="body">
+            <div class="container">
+                <div class="row">
+                    <dl class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+                        <dt>使用帮助</dt>
+                        <dd><a href="javascript:void(0);">新手指南</a></dd>
+                        <dd><a href="javascript:void(0);">蜜粉值体系</a></dd>
+                        <dd><a href="javascript:void(0);">蜜豆体系</a></dd>
+                        <dd><a href="javascript:void(0);">正品承诺</a></dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-10 col-xs-8">
+                        <dt>支付方式</dt>
+                        <dd><a href="javascript:void(0);">支付方式</a></dd>
+                        <dd><a href="javascript:void(0);">支付流程</a></dd>
+                        <dd><a href="javascript:void(0);">跨境进口税</a></dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-6 col-xs-8">
+                        <dt>配送方式</dt>
+                        <dd><a href="javascript:void(0);">包邮政策</a></dd>
+                        <dd><a href="javascript:void(0);">发货时间</a></dd>
+                        <dd><a href="javascript:void(0);">配送区域</a></dd>
+                        <dd><a href="javascript:void(0);">验货签收</a></dd>
+                    </dl>
+                    <dl class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+                        <dt>售后服务</dt>
+                        <dd><a href="javascript:void(0);">退货政策</a></dd>
+                        <dd><a href="javascript:void(0);">退货流程</a></dd>
+                        <dd><a href="javascript:void(0);">退款方式</a></dd>
+                    </dl>
+                    <dl class="col-lg-5 col-md-6 col-sm-10 col-xs-8">
+                        <dt>联系方式</dt>
+                        <dd><a href="javascript:void(0);">总裁邮箱 <span>ceo@mia.com</span></a></dd>
+                        <dd><a href="javascript:void(0);">商务合作 <span>bd@mia.com</span></a></dd>
+                        <dd><a href="javascript:void(0);">媒体合作 <span>pr@mia.com</span></a></dd>
+                        <dd><a href="javascript:void(0);">招商中心 <span>zhaoshang</span></a></dd>
+                        <dd><a href="javascript:void(0);">企业采购 <span>qiye@mia.com</span></a></dd>
+                    </dl>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-8">
+                        <img src="img/qrcode.png" alt="">
+                        <p>扫一扫</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <p>妙思乐专用所有版权&nbsp;&nbsp;All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $(document).on('ready', function() {
+            //banner插件赋值使用
+            $(".banner").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:true
+            });
+
+            //屏幕变化，banner图片src改变(图片的命名格式必须为:b_l_xxx.jpg,  b_m_xxx.jpg,   b_s_xxx.jpg)
+            $(window).resize(function(){
+                var imgPath  = $(".banner").find("li:last-child").find("img").attr("src");
+                var status   = imgPath.substring(6,7);
+                var banWidth = $(".banner").width()
+                if(banWidth > 1200){
+                    if(status != "l"){
+                        $(".banner").find("li img").each(function(){
+                            var self = $(this);
+                            var str = self.attr("src");
+                            //正则表达式
+                            var reg = new RegExp("(_m_|_s_)","g");
+                            var newstr = str.replace(reg,"_l_");
+                            self.attr({"src":newstr});
+                        });
+                    }
+                }else if(banWidth < 1200 && banWidth > 750){
+                    if(status != "m"){
+                        $(".banner").find("li img").each(function(){
+                            var self = $(this);
+                            var str = self.attr("src");
+                            //正则表达式
+                            var reg = new RegExp("(_l_|_s_)","g");
+                            var newstr = str.replace(reg,"_m_");
+                            self.attr({"src":newstr});
+                        });
+                    }
+                }else if(banWidth <= 750){
+                    if(status != "s"){
+                        $(".banner").find("li img").each(function(){
+                            var self = $(this);
+                            var str = self.attr("src");
+                            //正则表达式
+                            var reg = new RegExp("(_l_|_m_)","g");
+                            var newstr = str.replace(reg,"_s_");
+                            self.attr({"src":newstr});
+                        });
+                    }
+                }
+            });
+
+            //初始化banner图片
+            $(window).resize();
+
+        });
+    </script>
+</body>
+</html>
