@@ -118,62 +118,8 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/slick.js"></script>
-    <script>
-        $(document).on('ready', function() {
-            //banner插件赋值使用
-            $(".banner").slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:true
-            });
+    <script src="js/index.js"></script>
+    <script src="js/changeres.js"></script>
 
-            //屏幕变化，banner图片src改变(图片的命名格式必须为:b_l_xxx.jpg,  b_m_xxx.jpg,   b_s_xxx.jpg)
-            $(window).resize(function(){
-                var imgPath  = $(".banner").find("li:last-child").find("img").attr("src");
-                var status   = imgPath.substring(6,7);
-                var banWidth = $(".banner").width()
-                if(banWidth > 1200){
-                    if(status != "l"){
-                        $(".banner").find("li img").each(function(){
-                            var self = $(this);
-                            var str = self.attr("src");
-                            //正则表达式
-                            var reg = new RegExp("(_m_|_s_)","g");
-                            var newstr = str.replace(reg,"_l_");
-                            self.attr({"src":newstr});
-                        });
-                    }
-                }else if(banWidth < 1200 && banWidth > 750){
-                    if(status != "m"){
-                        $(".banner").find("li img").each(function(){
-                            var self = $(this);
-                            var str = self.attr("src");
-                            //正则表达式
-                            var reg = new RegExp("(_l_|_s_)","g");
-                            var newstr = str.replace(reg,"_m_");
-                            self.attr({"src":newstr});
-                        });
-                    }
-                }else if(banWidth <= 750){
-                    if(status != "s"){
-                        $(".banner").find("li img").each(function(){
-                            var self = $(this);
-                            var str = self.attr("src");
-                            //正则表达式
-                            var reg = new RegExp("(_l_|_m_)","g");
-                            var newstr = str.replace(reg,"_s_");
-                            self.attr({"src":newstr});
-                        });
-                    }
-                }
-            });
-
-            //初始化banner图片
-            $(window).resize();
-
-        });
-    </script>
 </body>
 </html>
